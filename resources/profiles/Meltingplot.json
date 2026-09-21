@@ -35,28 +35,36 @@
 			"sub_path": "process/fdm_process_meltingplot_chx_common.json"
 		},
 		{
-			"name": "fdm_process_meltingplot_chx_small_nozzle",
-			"sub_path": "process/fdm_process_meltingplot_chx_small_nozzle.json"
+			"name": "fdm_process_meltingplot_mbl_common",
+			"sub_path": "process/fdm_process_meltingplot_mbl_common.json"
 		},
 		{
 			"name": "fdm_process_meltingplot_chx_large_nozzle",
 			"sub_path": "process/fdm_process_meltingplot_chx_large_nozzle.json"
 		},
 		{
-			"name": "0.18mm Fine 0.4 nozzle @Meltingplot CHX 350",
-			"sub_path": "process/0.18mm Fine 0.4 nozzle @Meltingplot CHX 350.json"
+			"name": "fdm_process_meltingplot_chx_small_nozzle",
+			"sub_path": "process/fdm_process_meltingplot_chx_small_nozzle.json"
 		},
 		{
-			"name": "0.24mm Fine 0.6 nozzle @Meltingplot CHX 350",
-			"sub_path": "process/0.24mm Fine 0.6 nozzle @Meltingplot CHX 350.json"
+			"name": "fdm_process_meltingplot_mbl_04_nozzle",
+			"sub_path": "process/fdm_process_meltingplot_mbl_04_nozzle.json"
 		},
 		{
-			"name": "0.28mm Optimal 0.6 nozzle @Meltingplot CHX 350",
-			"sub_path": "process/0.28mm Optimal 0.6 nozzle @Meltingplot CHX 350.json"
+			"name": "fdm_process_meltingplot_mbl_06_nozzle",
+			"sub_path": "process/fdm_process_meltingplot_mbl_06_nozzle.json"
 		},
 		{
-			"name": "0.30mm Standard 0.6 nozzle @Meltingplot CHX 350",
-			"sub_path": "process/0.30mm Standard 0.6 nozzle @Meltingplot CHX 350.json"
+			"name": "fdm_process_meltingplot_mbl_08_nozzle",
+			"sub_path": "process/fdm_process_meltingplot_mbl_08_nozzle.json"
+		},
+		{
+			"name": "fdm_process_meltingplot_mbl_10_nozzle",
+			"sub_path": "process/fdm_process_meltingplot_mbl_10_nozzle.json"
+		},
+		{
+			"name": "fdm_process_meltingplot_mbl_12_nozzle",
+			"sub_path": "process/fdm_process_meltingplot_mbl_12_nozzle.json"
 		},
 		{
 			"name": "0.32mm Fine 0.8 nozzle @Meltingplot CHX 350",
@@ -75,32 +83,36 @@
 			"sub_path": "process/0.44mm Fine 1.0 nozzle @Meltingplot CHX 350.json"
 		},
 		{
-			"name": "0.48mm Optimal 1.0 nozzle @Meltingplot CHX 350",
-			"sub_path": "process/0.48mm Optimal 1.0 nozzle @Meltingplot CHX 350.json"
-		},
-		{
 			"name": "0.48mm Fine 1.2 nozzle @Meltingplot CHX 350",
 			"sub_path": "process/0.48mm Fine 1.2 nozzle @Meltingplot CHX 350.json"
+		},
+		{
+			"name": "0.48mm Optimal 1.0 nozzle @Meltingplot CHX 350",
+			"sub_path": "process/0.48mm Optimal 1.0 nozzle @Meltingplot CHX 350.json"
 		},
 		{
 			"name": "0.56mm Optimal 1.2 nozzle @Meltingplot CHX 350",
 			"sub_path": "process/0.56mm Optimal 1.2 nozzle @Meltingplot CHX 350.json"
 		},
 		{
-			"name": "fdm_process_meltingplot_mbl_common",
-			"sub_path": "process/fdm_process_meltingplot_mbl_common.json"
+			"name": "0.18mm Fine 0.4 nozzle @Meltingplot CHX 350",
+			"sub_path": "process/0.18mm Fine 0.4 nozzle @Meltingplot CHX 350.json"
 		},
 		{
-			"name": "fdm_process_meltingplot_mbl_04_nozzle",
-			"sub_path": "process/fdm_process_meltingplot_mbl_04_nozzle.json"
+			"name": "0.24mm Fine 0.6 nozzle @Meltingplot CHX 350",
+			"sub_path": "process/0.24mm Fine 0.6 nozzle @Meltingplot CHX 350.json"
+		},
+		{
+			"name": "0.28mm Optimal 0.6 nozzle @Meltingplot CHX 350",
+			"sub_path": "process/0.28mm Optimal 0.6 nozzle @Meltingplot CHX 350.json"
+		},
+		{
+			"name": "0.30mm Standard 0.6 nozzle @Meltingplot CHX 350",
+			"sub_path": "process/0.30mm Standard 0.6 nozzle @Meltingplot CHX 350.json"
 		},
 		{
 			"name": "0.18mm Fine 0.4 nozzle @Meltingplot MBL",
 			"sub_path": "process/0.18mm Fine 0.4 nozzle @Meltingplot MBL.json"
-		},
-		{
-			"name": "fdm_process_meltingplot_mbl_06_nozzle",
-			"sub_path": "process/fdm_process_meltingplot_mbl_06_nozzle.json"
 		},
 		{
 			"name": "0.24mm Fine 0.6 nozzle @Meltingplot MBL",
@@ -115,10 +127,6 @@
 			"sub_path": "process/0.30mm Standard 0.6 nozzle @Meltingplot MBL.json"
 		},
 		{
-			"name": "fdm_process_meltingplot_mbl_08_nozzle",
-			"sub_path": "process/fdm_process_meltingplot_mbl_08_nozzle.json"
-		},
-		{
 			"name": "0.34mm Fine 0.8 nozzle @Meltingplot MBL",
 			"sub_path": "process/0.34mm Fine 0.8 nozzle @Meltingplot MBL.json"
 		},
@@ -131,20 +139,12 @@
 			"sub_path": "process/0.38mm Standard 0.8 nozzle @Meltingplot MBL.json"
 		},
 		{
-			"name": "fdm_process_meltingplot_mbl_10_nozzle",
-			"sub_path": "process/fdm_process_meltingplot_mbl_10_nozzle.json"
-		},
-		{
 			"name": "0.44mm Fine 1.0 nozzle @Meltingplot MBL",
 			"sub_path": "process/0.44mm Fine 1.0 nozzle @Meltingplot MBL.json"
 		},
 		{
 			"name": "0.48mm Optimal 1.0 nozzle @Meltingplot MBL",
 			"sub_path": "process/0.48mm Optimal 1.0 nozzle @Meltingplot MBL.json"
-		},
-		{
-			"name": "fdm_process_meltingplot_mbl_12_nozzle",
-			"sub_path": "process/fdm_process_meltingplot_mbl_12_nozzle.json"
 		},
 		{
 			"name": "0.48mm Fine 1.2 nozzle @Meltingplot MBL",
@@ -157,28 +157,56 @@
 	],
 	"filament_list": [
 		{
-			"name": "Meltingplot PLA",
-			"sub_path": "filament/Meltingplot PLA.json"
-		},
-		{
-			"name": "Meltingplot PLA @0.6 nozzle",
-			"sub_path": "filament/Meltingplot PLA @0.6 nozzle.json"
-		},
-		{
-			"name": "Meltingplot PLA @0.8 nozzle",
-			"sub_path": "filament/Meltingplot PLA @0.8 nozzle.json"
-		},
-		{
-			"name": "Meltingplot PLA @1.0 nozzle",
-			"sub_path": "filament/Meltingplot PLA @1.0 nozzle.json"
-		},
-		{
-			"name": "Meltingplot PLA @0.4 nozzle",
-			"sub_path": "filament/Meltingplot PLA @0.4 nozzle.json"
+			"name": "Extrudr PLA NX2 Matt",
+			"sub_path": "filament/Extrudr PLA NX2 Matt.json"
 		},
 		{
 			"name": "Meltingplot ABS",
 			"sub_path": "filament/Meltingplot ABS.json"
+		},
+		{
+			"name": "Meltingplot ASA",
+			"sub_path": "filament/Meltingplot ASA.json"
+		},
+		{
+			"name": "Meltingplot PA6 CF HT",
+			"sub_path": "filament/Meltingplot PA6 CF HT.json"
+		},
+		{
+			"name": "Meltingplot PET-CF15",
+			"sub_path": "filament/Meltingplot PET-CF15.json"
+		},
+		{
+			"name": "Meltingplot PETG",
+			"sub_path": "filament/Meltingplot PETG.json"
+		},
+		{
+			"name": "Meltingplot PLA",
+			"sub_path": "filament/Meltingplot PLA.json"
+		},
+		{
+			"name": "Meltingplot TitanX",
+			"sub_path": "filament/Meltingplot TitanX.json"
+		},
+		{
+			"name": "Extrudr PLA NX2 Matt @0.4 nozzle",
+			"sub_path": "filament/Extrudr PLA NX2 Matt @0.4 nozzle.json"
+		},
+		{
+			"name": "Extrudr PLA NX2 Matt @0.6 nozzle",
+			"sub_path": "filament/Extrudr PLA NX2 Matt @0.6 nozzle.json"
+		},
+		{
+			"name": "Extrudr PLA NX2 Matt @0.8 nozzle",
+			"sub_path": "filament/Extrudr PLA NX2 Matt @0.8 nozzle.json"
+		},
+		{
+			"name": "Extrudr PLA NX2 Matt @1.0 nozzle",
+			"sub_path": "filament/Extrudr PLA NX2 Matt @1.0 nozzle.json"
+		},
+		{
+			"name": "Meltingplot ABS @0.4 nozzle",
+			"sub_path": "filament/Meltingplot ABS @0.4 nozzle.json"
 		},
 		{
 			"name": "Meltingplot ABS @0.6 nozzle",
@@ -193,38 +221,6 @@
 			"sub_path": "filament/Meltingplot ABS @1.0 nozzle.json"
 		},
 		{
-			"name": "Meltingplot ABS @0.4 nozzle",
-			"sub_path": "filament/Meltingplot ABS @0.4 nozzle.json"
-		},
-		{
-			"name": "Meltingplot TitanX",
-			"sub_path": "filament/Meltingplot TitanX.json"
-		},
-		{
-			"name": "Meltingplot TitanX @0.6 nozzle",
-			"sub_path": "filament/Meltingplot TitanX @0.6 nozzle.json"
-		},
-		{
-			"name": "Meltingplot TitanX @0.8 nozzle",
-			"sub_path": "filament/Meltingplot TitanX @0.8 nozzle.json"
-		},
-		{
-			"name": "Meltingplot TitanX @1.0 nozzle",
-			"sub_path": "filament/Meltingplot TitanX @1.0 nozzle.json"
-		},
-		{
-			"name": "Meltingplot TitanX @0.4 nozzle",
-			"sub_path": "filament/Meltingplot TitanX @0.4 nozzle.json"
-		},
-		{
-			"name": "Meltingplot ASA",
-			"sub_path": "filament/Meltingplot ASA.json"
-		},
-		{
-			"name": "Meltingplot ASA @1.0 nozzle",
-			"sub_path": "filament/Meltingplot ASA @1.0 nozzle.json"
-		},
-		{
 			"name": "Meltingplot ASA @0.4 nozzle",
 			"sub_path": "filament/Meltingplot ASA @0.4 nozzle.json"
 		},
@@ -237,28 +233,12 @@
 			"sub_path": "filament/Meltingplot ASA @0.8 nozzle.json"
 		},
 		{
-			"name": "Meltingplot PETG",
-			"sub_path": "filament/Meltingplot PETG.json"
+			"name": "Meltingplot ASA @1.0 nozzle",
+			"sub_path": "filament/Meltingplot ASA @1.0 nozzle.json"
 		},
 		{
-			"name": "Meltingplot PETG @0.6 nozzle",
-			"sub_path": "filament/Meltingplot PETG @0.6 nozzle.json"
-		},
-		{
-			"name": "Meltingplot PETG @0.8 nozzle",
-			"sub_path": "filament/Meltingplot PETG @0.8 nozzle.json"
-		},
-		{
-			"name": "Meltingplot PETG @1.0 nozzle",
-			"sub_path": "filament/Meltingplot PETG @1.0 nozzle.json"
-		},
-		{
-			"name": "Meltingplot PETG @0.4 nozzle",
-			"sub_path": "filament/Meltingplot PETG @0.4 nozzle.json"
-		},
-		{
-			"name": "Meltingplot PA6 CF HT",
-			"sub_path": "filament/Meltingplot PA6 CF HT.json"
+			"name": "Meltingplot PA6 CF HT @0.4 nozzle",
+			"sub_path": "filament/Meltingplot PA6 CF HT @0.4 nozzle.json"
 		},
 		{
 			"name": "Meltingplot PA6 CF HT @0.6 nozzle",
@@ -273,12 +253,8 @@
 			"sub_path": "filament/Meltingplot PA6 CF HT @1.0 nozzle.json"
 		},
 		{
-			"name": "Meltingplot PA6 CF HT @0.4 nozzle",
-			"sub_path": "filament/Meltingplot PA6 CF HT @0.4 nozzle.json"
-		},
-		{
-			"name": "Meltingplot PET-CF15",
-			"sub_path": "filament/Meltingplot PET-CF15.json"
+			"name": "Meltingplot PET-CF15 @0.4 nozzle",
+			"sub_path": "filament/Meltingplot PET-CF15 @0.4 nozzle.json"
 		},
 		{
 			"name": "Meltingplot PET-CF15 @0.6 nozzle",
@@ -293,28 +269,52 @@
 			"sub_path": "filament/Meltingplot PET-CF15 @1.0 nozzle.json"
 		},
 		{
-			"name": "Meltingplot PET-CF15 @0.4 nozzle",
-			"sub_path": "filament/Meltingplot PET-CF15 @0.4 nozzle.json"
+			"name": "Meltingplot PETG @0.4 nozzle",
+			"sub_path": "filament/Meltingplot PETG @0.4 nozzle.json"
 		},
 		{
-			"name": "Extrudr PLA NX2 Matt",
-			"sub_path": "filament/Extrudr PLA NX2 Matt.json"
+			"name": "Meltingplot PETG @0.6 nozzle",
+			"sub_path": "filament/Meltingplot PETG @0.6 nozzle.json"
 		},
 		{
-			"name": "Extrudr PLA NX2 Matt @1.0 nozzle",
-			"sub_path": "filament/Extrudr PLA NX2 Matt @1.0 nozzle.json"
+			"name": "Meltingplot PETG @0.8 nozzle",
+			"sub_path": "filament/Meltingplot PETG @0.8 nozzle.json"
 		},
 		{
-			"name": "Extrudr PLA NX2 Matt @0.4 nozzle",
-			"sub_path": "filament/Extrudr PLA NX2 Matt @0.4 nozzle.json"
+			"name": "Meltingplot PETG @1.0 nozzle",
+			"sub_path": "filament/Meltingplot PETG @1.0 nozzle.json"
 		},
 		{
-			"name": "Extrudr PLA NX2 Matt @0.6 nozzle",
-			"sub_path": "filament/Extrudr PLA NX2 Matt @0.6 nozzle.json"
+			"name": "Meltingplot PLA @0.4 nozzle",
+			"sub_path": "filament/Meltingplot PLA @0.4 nozzle.json"
 		},
 		{
-			"name": "Extrudr PLA NX2 Matt @0.8 nozzle",
-			"sub_path": "filament/Extrudr PLA NX2 Matt @0.8 nozzle.json"
+			"name": "Meltingplot PLA @0.6 nozzle",
+			"sub_path": "filament/Meltingplot PLA @0.6 nozzle.json"
+		},
+		{
+			"name": "Meltingplot PLA @0.8 nozzle",
+			"sub_path": "filament/Meltingplot PLA @0.8 nozzle.json"
+		},
+		{
+			"name": "Meltingplot PLA @1.0 nozzle",
+			"sub_path": "filament/Meltingplot PLA @1.0 nozzle.json"
+		},
+		{
+			"name": "Meltingplot TitanX @0.4 nozzle",
+			"sub_path": "filament/Meltingplot TitanX @0.4 nozzle.json"
+		},
+		{
+			"name": "Meltingplot TitanX @0.6 nozzle",
+			"sub_path": "filament/Meltingplot TitanX @0.6 nozzle.json"
+		},
+		{
+			"name": "Meltingplot TitanX @0.8 nozzle",
+			"sub_path": "filament/Meltingplot TitanX @0.8 nozzle.json"
+		},
+		{
+			"name": "Meltingplot TitanX @1.0 nozzle",
+			"sub_path": "filament/Meltingplot TitanX @1.0 nozzle.json"
 		}
 	],
 	"machine_list": [
