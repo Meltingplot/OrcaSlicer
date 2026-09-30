@@ -78,5 +78,8 @@
 		"Meltingplot MBL 308 1.2 nozzle",
 		"Meltingplot MBL 480 1.2 nozzle",
 		"Meltingplot CHX 350 1.2 nozzle"
+	],
+	"filament_retraction_length": [
+		"0.8"
 	]
 }

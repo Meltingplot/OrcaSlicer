@@ -21,6 +21,7 @@
 		"0"
 	],
 	"machine_max_speed_e": [
+		"60",
 		"60"
 	],
 	"printer_settings_id": "",
