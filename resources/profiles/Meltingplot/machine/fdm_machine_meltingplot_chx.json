@@ -4,6 +4,7 @@
 	"inherits": "fdm_machine_common",
 	"from": "system",
 	"instantiation": "false",
+	"auxiliary_fan": "1",
 	"fan_kickstart": "0.5",
 	"fan_speedup_time": "1",
 	"machine_max_acceleration_e": [
