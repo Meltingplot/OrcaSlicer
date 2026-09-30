@@ -1,0 +1,170 @@
+name: Release Meltingplot profiles
+
+# Packs the Meltingplot vendor bundle -- resources/profiles/Meltingplot.json plus
+# resources/profiles/Meltingplot/ -- into a zip and attaches it to a GitHub release
+# on this fork, so the profiles can be handed out without shipping a whole slicer.
+#
+# Trigger: push a tag named meltingplot-v<bundle version>, e.g.
+#   git tag meltingplot-v02.04.00.02
+#   git push mp meltingplot-v02.04.00.02
+#
+# The version in the tag must equal "version" in resources/profiles/Meltingplot.json.
+# The workflow fails if they disagree, so a forgotten version bump cannot ship: the
+# updater only installs a strictly newer version, and a zip whose version matches an
+# already-released one would silently do nothing on a user's machine.
+#
+# Fork-only. The job guard keeps this inert if the branch ever reaches
+# OrcaSlicer/OrcaSlicer, where releasing one vendor's profiles makes no sense.
+
+on:
+  push:
+    tags:
+      - 'meltingplot-v*'
+  # Lets you re-run the packaging for a tag that already exists, e.g. after fixing
+  # a release body. Assets are replaced, the tag is not moved.
+  workflow_dispatch:
+    inputs:
+      tag:
+        description: 'Existing meltingplot-v* tag to (re)package'
+        required: true
+        type: string
+
+permissions:
+  contents: write # create the release and upload its asset
+
+jobs:
+  release:
+    name: Package and publish the Meltingplot bundle
+    if: github.repository == 'Meltingplot/OrcaSlicer'
+    runs-on: ubuntu-24.04
+    env:
+      GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      VENDOR: Meltingplot
+      TAG: ${{ inputs.tag || github.ref_name }}
+    steps:
+      # Runs before the checkout, because the checkout below resolves TAG as a ref.
+      # On a tag push GITHUB_REF_NAME is trustworthy, but workflow_dispatch takes a
+      # free-text input, and a branch name there would package an untagged tree and
+      # release it. Pinning the shape to our own tag convention rules that out.
+      - name: Check the tag name is a release tag
+        run: |
+          set -euo pipefail
+          if ! printf '%s' "$TAG" | grep -Eq '^meltingplot-v[0-9]{2}\.[0-9]{2}\.[0-9]{2}\.[0-9]{2}$'; then
+            echo "::error::'$TAG' is not a release tag. Expected meltingplot-v<NN.NN.NN.NN>, e.g. meltingplot-v02.04.00.02."
+            exit 1
+          fi
+
+      - name: Checkout the tagged tree
+        uses: actions/checkout@v7
+        with:
+          ref: refs/tags/${{ inputs.tag || github.ref_name }}
+
+      - name: Check the tag against the bundle version
+        id: version
+        run: |
+          set -euo pipefail
+          index="resources/profiles/$VENDOR.json"
+          if [ ! -f "$index" ]; then
+            echo "::error::$index not found. Is this tag on a branch that carries the bundle?"
+            exit 1
+          fi
+          version=$(python3 -c 'import json,sys; print(json.load(open(sys.argv[1]))["version"])' "$index")
+          tag_version="${TAG#meltingplot-v}"
+          echo "bundle version : $version"
+          echo "tag version    : $tag_version"
+          if [ "$version" != "$tag_version" ]; then
+            echo "::error::Tag '$TAG' carries version '$tag_version' but $index says '$version'. Bump the bundle version or retag."
+            exit 1
+          fi
+          echo "version=$version" >> "$GITHUB_OUTPUT"
+
+      - name: Run the profile tool's own unit tests
+        run: python3 -m unittest discover -s scripts/tests -t scripts
+
+      - name: Check the profile tree
+        run: python3 ./scripts/orca_profile_tool.py check
+
+      # A release must not ship a bundle that the authoring commands would still
+      # rewrite: an unregistered preset never loads, and a missing setting_id breaks
+      # the preset's identity. These run for real and the tree must come back clean,
+      # which does not depend on how the tool reports a dry run.
+      - name: Check the bundle is fully authored
+        run: |
+          set -euo pipefail
+          python3 ./scripts/orca_profile_tool.py normalize    --vendor "$VENDOR"
+          python3 ./scripts/orca_profile_tool.py update-index --vendor "$VENDOR"
+          python3 ./scripts/orca_profile_tool.py generate-id  --vendor "$VENDOR"
+          if ! git diff --quiet -- resources/profiles; then
+            echo "::error::normalize/update-index/generate-id changed the tree, so the tag is not release-ready:"
+            git --no-pager diff --stat -- resources/profiles
+            exit 1
+          fi
+          echo "Tree unchanged: the bundle is normalized, indexed and fully identified."
+
+      - name: Build the zip
+        id: package
+        env:
+          VERSION: ${{ steps.version.outputs.version }}
+        run: |
+          set -euo pipefail
+          asset="$VENDOR-profiles-$VERSION.zip"
+          mkdir -p dist staging
+          cp -a "resources/profiles/$VENDOR.json" "resources/profiles/$VENDOR" staging/
+          # Zip from staging so the archive root holds "<Vendor>.json" and "<Vendor>/",
+          # which is exactly what resources/profiles/ expects. -X drops the extra
+          # local attributes, keeping the archive reproducible across runners.
+          ( cd staging && zip -qrX "$GITHUB_WORKSPACE/dist/$asset" "$VENDOR.json" "$VENDOR" )
+          ( cd dist && sha256sum "$asset" > "$asset.sha256" )
+          echo "asset=$asset" >> "$GITHUB_OUTPUT"
+          echo "Archive contents:"
+          unzip -l "dist/$asset"
+          echo "Checksum: $(cat "dist/$asset.sha256")"
+
+      - name: Publish the release
+        env:
+          VERSION: ${{ steps.version.outputs.version }}
+          ASSET: ${{ steps.package.outputs.asset }}
+        run: |
+          set -euo pipefail
+          presets=$(python3 - <<'PY'
+          import json
+          d = json.load(open("resources/profiles/Meltingplot.json"))
+          for key, label in (("machine_model_list", "printer models"),
+                             ("machine_list", "printer presets"),
+                             ("process_list", "process presets"),
+                             ("filament_list", "filament presets")):
+              print(f"- {len(d.get(key, []))} {label}")
+          PY
+          )
+          cat > notes.md <<EOF
+          Meltingplot vendor profiles for OrcaSlicer, bundle version \`$VERSION\`.
+
+          $presets
+
+          **Contents of \`$ASSET\`**
+
+          \`\`\`
+          $VENDOR.json
+          $VENDOR/
+          \`\`\`
+
+          Unpack both into the \`resources/profiles/\` directory of an OrcaSlicer
+          installation, replacing any previous copy, and restart the slicer. OrcaSlicer
+          installs a bundle only when its version is strictly newer than the one already
+          present, so the version above must exceed the installed one.
+
+          Built from ${GITHUB_SHA} by \`.github/workflows/meltingplot_profiles_release.yml\`.
+          EOF
+
+          if gh release view "$TAG" --repo "$GITHUB_REPOSITORY" >/dev/null 2>&1; then
+            echo "Release $TAG exists; replacing its assets and notes."
+            gh release edit "$TAG" --repo "$GITHUB_REPOSITORY" \
+              --title "Meltingplot profiles $VERSION" --notes-file notes.md
+            gh release upload "$TAG" dist/* --repo "$GITHUB_REPOSITORY" --clobber
+          else
+            gh release create "$TAG" dist/* --repo "$GITHUB_REPOSITORY" \
+              --title "Meltingplot profiles $VERSION" --notes-file notes.md
+          fi
+
+          echo "Published assets:"
+          gh release view "$TAG" --repo "$GITHUB_REPOSITORY" --json assets --jq '.assets[].name'
