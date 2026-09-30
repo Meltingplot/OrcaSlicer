@@ -23,6 +23,9 @@
 	"slow_down_min_speed": [
 		"1"
 	],
+	"fan_cooling_layer_time": [
+		"40"
+	],
 	"cool_plate_temp": [
 		"110"
 	],
