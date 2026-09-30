@@ -65,5 +65,11 @@
 		"400x300"
 	],
 	"thumbnails_format": "PNG",
+	"printable_area": [
+		"0x0",
+		"850x0",
+		"850x405",
+		"0x405"
+	],
 	"machine_start_gcode": "M140 P0 S{first_layer_bed_temperature[0]} ; set bed temp\nG10 P0 R{first_layer_temperature[0] + standby_temperature_delta} S{first_layer_temperature[0]}\n\nM83 ; use relative distances for extrusion\nG90 ; use absolute coordinates\n\nM98 P\"0:/sys/meltingplot/print_start\""
 }

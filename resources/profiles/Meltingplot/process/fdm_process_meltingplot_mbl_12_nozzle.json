@@ -10,6 +10,5 @@
 	"line_width": "120%",
 	"inner_wall_line_width": "120%",
 	"outer_wall_line_width": "110%",
-	"sparse_infill_line_width": "120%",
-	"internal_solid_infill_line_width": "120%"
+	"sparse_infill_line_width": "120%"
 }

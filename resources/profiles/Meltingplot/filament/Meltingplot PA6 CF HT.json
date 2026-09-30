@@ -48,9 +48,6 @@
 	"overhang_fan_speed": [
 		"100"
 	],
-	"overhang_fan_threshold": [
-		"95%"
-	],
 	"additional_cooling_fan_speed": [
 		"40"
 	],

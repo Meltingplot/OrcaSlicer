@@ -14,7 +14,6 @@
 	"sparse_infill_pattern": "cubic",
 	"sparse_infill_speed": "300",
 	"support_base_pattern_spacing": "7.5",
-	"support_interface_speed": "80",
 	"support_object_first_layer_gap": "0.5",
 	"support_object_xy_distance": "0.45",
 	"support_speed": "200",

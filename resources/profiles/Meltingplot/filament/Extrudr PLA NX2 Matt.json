@@ -39,9 +39,6 @@
 	"overhang_fan_threshold": [
 		"25%"
 	],
-	"fan_cooling_layer_time": [
-		"100"
-	],
 	"slow_down_layer_time": [
 		"83"
 	],
