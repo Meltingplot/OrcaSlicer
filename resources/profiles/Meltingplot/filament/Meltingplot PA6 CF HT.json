@@ -57,6 +57,9 @@
 	"slow_down_layer_time": [
 		"33"
 	],
+	"slow_down_min_speed": [
+		"1"
+	],
 	"cool_plate_temp": [
 		"80"
 	],
