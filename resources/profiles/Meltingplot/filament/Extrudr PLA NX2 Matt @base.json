@@ -1,11 +1,10 @@
 {
 	"type": "filament",
-	"name": "Extrudr PLA NX2 Matt",
+	"name": "Extrudr PLA NX2 Matt @base",
 	"inherits": "Generic PLA Matte @System",
 	"from": "system",
-	"setting_id": "qmPRaTcPlmtk6zB2",
 	"filament_id": "OF1PznHI",
-	"instantiation": "true",
+	"instantiation": "false",
 	"filament_extruder_variant": [
 		"Direct Drive Standard"
 	],
@@ -17,9 +16,6 @@
 	],
 	"nozzle_temperature_range_high": [
 		"230"
-	],
-	"filament_max_volumetric_speed": [
-		"30"
 	],
 	"filament_adaptive_volumetric_speed": [
 		"1"
@@ -38,9 +34,6 @@
 	],
 	"overhang_fan_threshold": [
 		"25%"
-	],
-	"slow_down_layer_time": [
-		"83"
 	],
 	"slow_down_min_speed": [
 		"1"
@@ -71,13 +64,6 @@
 	],
 	"filament_diameter": [
 		"2.85"
-	],
-	"compatible_printers": [
-		"Meltingplot MBL 133 1.2 nozzle",
-		"Meltingplot MBL 136 1.2 nozzle",
-		"Meltingplot MBL 308 1.2 nozzle",
-		"Meltingplot MBL 480 1.2 nozzle",
-		"Meltingplot CHX 350 1.2 nozzle"
 	],
 	"filament_retraction_length": [
 		"0.8"

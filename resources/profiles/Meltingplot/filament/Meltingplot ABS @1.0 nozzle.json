@@ -1,7 +1,7 @@
 {
 	"type": "filament",
 	"name": "Meltingplot ABS @1.0 nozzle",
-	"inherits": "Meltingplot ABS",
+	"inherits": "Meltingplot ABS @base",
 	"from": "system",
 	"setting_id": "G2UYPHTEWjun65jj",
 	"instantiation": "true",

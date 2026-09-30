@@ -1,11 +1,10 @@
 {
 	"type": "filament",
-	"name": "Meltingplot TitanX",
+	"name": "Meltingplot ABS @base",
 	"inherits": "Generic ABS @System",
 	"from": "system",
-	"setting_id": "LDPRmxlvX97NXF0F",
-	"filament_id": "OFyYfgDM",
-	"instantiation": "true",
+	"filament_id": "OFVIMei2",
+	"instantiation": "false",
 	"filament_extruder_variant": [
 		"Direct Drive Standard"
 	],
@@ -16,13 +15,19 @@
 		"0.93"
 	],
 	"filament_shrink": [
-		"99.75%"
+		"99%"
+	],
+	"filament_shrinkage_compensation_z": [
+		"99%"
 	],
 	"filament_density": [
-		"1.07"
+		"1.1"
 	],
-	"slow_down_layer_time": [
-		"33"
+	"filament_cost": [
+		"30"
+	],
+	"default_filament_colour": [
+		"#F8F8F8"
 	],
 	"slow_down_min_speed": [
 		"1"
@@ -53,15 +58,5 @@
 	],
 	"filament_diameter": [
 		"2.85"
-	],
-	"filament_max_volumetric_speed": [
-		"33"
-	],
-	"compatible_printers": [
-		"Meltingplot MBL 133 1.2 nozzle",
-		"Meltingplot MBL 136 1.2 nozzle",
-		"Meltingplot MBL 308 1.2 nozzle",
-		"Meltingplot MBL 480 1.2 nozzle",
-		"Meltingplot CHX 350 1.2 nozzle"
 	]
 }

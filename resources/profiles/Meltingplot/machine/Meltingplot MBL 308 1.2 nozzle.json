@@ -19,6 +19,6 @@
 	"printable_height": "896",
 	"default_print_profile": "0.56mm Optimal 1.2 nozzle @Meltingplot MBL",
 	"default_filament_profile": [
-		"Meltingplot PLA"
+		"Meltingplot PLA @1.2 nozzle"
 	]
 }

@@ -1,11 +1,10 @@
 {
 	"type": "filament",
-	"name": "Meltingplot PA6 CF HT",
+	"name": "Meltingplot PA6 CF HT @base",
 	"inherits": "Generic PA-CF @System",
 	"from": "system",
-	"setting_id": "kzlYLTM6H5CgpQ8y",
 	"filament_id": "OFdPevOo",
-	"instantiation": "true",
+	"instantiation": "false",
 	"filament_extruder_variant": [
 		"Direct Drive Standard"
 	],
@@ -17,9 +16,6 @@
 	],
 	"nozzle_temperature_initial_layer": [
 		"275"
-	],
-	"filament_max_volumetric_speed": [
-		"22"
 	],
 	"filament_density": [
 		"1.25"
@@ -54,9 +50,6 @@
 	"close_fan_the_first_x_layers": [
 		"1"
 	],
-	"slow_down_layer_time": [
-		"33"
-	],
 	"slow_down_min_speed": [
 		"1"
 	],
@@ -86,12 +79,5 @@
 	],
 	"filament_diameter": [
 		"2.85"
-	],
-	"compatible_printers": [
-		"Meltingplot MBL 133 1.2 nozzle",
-		"Meltingplot MBL 136 1.2 nozzle",
-		"Meltingplot MBL 308 1.2 nozzle",
-		"Meltingplot MBL 480 1.2 nozzle",
-		"Meltingplot CHX 350 1.2 nozzle"
 	]
 }

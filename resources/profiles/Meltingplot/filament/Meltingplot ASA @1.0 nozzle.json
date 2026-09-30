@@ -1,7 +1,7 @@
 {
 	"type": "filament",
 	"name": "Meltingplot ASA @1.0 nozzle",
-	"inherits": "Meltingplot ASA",
+	"inherits": "Meltingplot ASA @base",
 	"from": "system",
 	"setting_id": "JRSnSdwkvrQx8uH8",
 	"instantiation": "true",

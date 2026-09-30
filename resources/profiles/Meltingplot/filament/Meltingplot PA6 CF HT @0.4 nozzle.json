@@ -1,7 +1,7 @@
 {
 	"type": "filament",
 	"name": "Meltingplot PA6 CF HT @0.4 nozzle",
-	"inherits": "Meltingplot PA6 CF HT",
+	"inherits": "Meltingplot PA6 CF HT @base",
 	"from": "system",
 	"setting_id": "yUlzU6KMVx8bpxj1",
 	"instantiation": "true",

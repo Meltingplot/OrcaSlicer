@@ -1,7 +1,7 @@
 {
 	"type": "filament",
 	"name": "Extrudr PLA NX2 Matt @0.4 nozzle",
-	"inherits": "Extrudr PLA NX2 Matt",
+	"inherits": "Extrudr PLA NX2 Matt @base",
 	"from": "system",
 	"setting_id": "AL4mb7soA7L0FKTb",
 	"instantiation": "true",

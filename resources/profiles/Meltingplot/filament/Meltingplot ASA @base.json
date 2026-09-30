@@ -1,11 +1,10 @@
 {
 	"type": "filament",
-	"name": "Meltingplot ASA",
+	"name": "Meltingplot ASA @base",
 	"inherits": "Generic ASA @System",
 	"from": "system",
-	"setting_id": "5VuPxdOXfTIidM4X",
 	"filament_id": "OFRdywGp",
-	"instantiation": "true",
+	"instantiation": "false",
 	"filament_extruder_variant": [
 		"Direct Drive Standard"
 	],
@@ -18,9 +17,6 @@
 	"nozzle_temperature_initial_layer": [
 		"255"
 	],
-	"filament_max_volumetric_speed": [
-		"33"
-	],
 	"filament_density": [
 		"1.11"
 	],
@@ -29,9 +25,6 @@
 	],
 	"default_filament_colour": [
 		"#123123"
-	],
-	"slow_down_layer_time": [
-		"22"
 	],
 	"slow_down_min_speed": [
 		"1"
@@ -62,12 +55,5 @@
 	],
 	"filament_diameter": [
 		"2.85"
-	],
-	"compatible_printers": [
-		"Meltingplot MBL 133 1.2 nozzle",
-		"Meltingplot MBL 136 1.2 nozzle",
-		"Meltingplot MBL 308 1.2 nozzle",
-		"Meltingplot MBL 480 1.2 nozzle",
-		"Meltingplot CHX 350 1.2 nozzle"
 	]
 }

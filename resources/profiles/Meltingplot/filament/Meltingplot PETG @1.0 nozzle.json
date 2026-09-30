@@ -1,7 +1,7 @@
 {
 	"type": "filament",
 	"name": "Meltingplot PETG @1.0 nozzle",
-	"inherits": "Meltingplot PETG",
+	"inherits": "Meltingplot PETG @base",
 	"from": "system",
 	"setting_id": "kR8Vbizk0CPciCbD",
 	"instantiation": "true",

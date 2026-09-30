@@ -1,0 +1,22 @@
+{
+	"type": "filament",
+	"name": "Meltingplot PETG @1.2 nozzle",
+	"renamed_from": "Meltingplot PETG",
+	"inherits": "Meltingplot PETG @base",
+	"from": "system",
+	"setting_id": "FBHaCyUnEcaaGvFh",
+	"instantiation": "true",
+	"filament_max_volumetric_speed": [
+		"27"
+	],
+	"slow_down_layer_time": [
+		"33"
+	],
+	"compatible_printers": [
+		"Meltingplot MBL 133 1.2 nozzle",
+		"Meltingplot MBL 136 1.2 nozzle",
+		"Meltingplot MBL 308 1.2 nozzle",
+		"Meltingplot MBL 480 1.2 nozzle",
+		"Meltingplot CHX 350 1.2 nozzle"
+	]
+}

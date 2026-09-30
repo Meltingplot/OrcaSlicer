@@ -1,11 +1,10 @@
 {
 	"type": "filament",
-	"name": "Meltingplot PLA",
+	"name": "Meltingplot PLA @base",
 	"inherits": "Generic PLA @System",
 	"from": "system",
-	"setting_id": "ONpaHlfJVJyh7Shb",
 	"filament_id": "OFwXRVbB",
-	"instantiation": "true",
+	"instantiation": "false",
 	"filament_extruder_variant": [
 		"Direct Drive Standard"
 	],
@@ -23,9 +22,6 @@
 	],
 	"default_filament_colour": [
 		"#F8F8F8"
-	],
-	"slow_down_layer_time": [
-		"66"
 	],
 	"slow_down_min_speed": [
 		"1"
@@ -56,15 +52,5 @@
 	],
 	"filament_diameter": [
 		"2.85"
-	],
-	"filament_max_volumetric_speed": [
-		"33"
-	],
-	"compatible_printers": [
-		"Meltingplot MBL 133 1.2 nozzle",
-		"Meltingplot MBL 136 1.2 nozzle",
-		"Meltingplot MBL 308 1.2 nozzle",
-		"Meltingplot MBL 480 1.2 nozzle",
-		"Meltingplot CHX 350 1.2 nozzle"
 	]
 }

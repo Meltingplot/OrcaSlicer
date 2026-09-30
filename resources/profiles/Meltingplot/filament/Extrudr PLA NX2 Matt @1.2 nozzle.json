@@ -1,0 +1,22 @@
+{
+	"type": "filament",
+	"name": "Extrudr PLA NX2 Matt @1.2 nozzle",
+	"renamed_from": "Extrudr PLA NX2 Matt",
+	"inherits": "Extrudr PLA NX2 Matt @base",
+	"from": "system",
+	"setting_id": "buaBn8mYHm8zRjIS",
+	"instantiation": "true",
+	"filament_max_volumetric_speed": [
+		"30"
+	],
+	"slow_down_layer_time": [
+		"83"
+	],
+	"compatible_printers": [
+		"Meltingplot MBL 133 1.2 nozzle",
+		"Meltingplot MBL 136 1.2 nozzle",
+		"Meltingplot MBL 308 1.2 nozzle",
+		"Meltingplot MBL 480 1.2 nozzle",
+		"Meltingplot CHX 350 1.2 nozzle"
+	]
+}

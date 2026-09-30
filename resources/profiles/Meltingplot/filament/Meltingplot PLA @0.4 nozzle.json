@@ -1,7 +1,7 @@
 {
 	"type": "filament",
 	"name": "Meltingplot PLA @0.4 nozzle",
-	"inherits": "Meltingplot PLA",
+	"inherits": "Meltingplot PLA @base",
 	"from": "system",
 	"setting_id": "T3OEfrhyZ6ISyv20",
 	"instantiation": "true",

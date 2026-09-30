@@ -1,7 +1,7 @@
 {
 	"type": "filament",
 	"name": "Meltingplot PET-CF15 @1.0 nozzle",
-	"inherits": "Meltingplot PET-CF15",
+	"inherits": "Meltingplot PET-CF15 @base",
 	"from": "system",
 	"setting_id": "X2yhWBjK4j46bUYW",
 	"instantiation": "true",
