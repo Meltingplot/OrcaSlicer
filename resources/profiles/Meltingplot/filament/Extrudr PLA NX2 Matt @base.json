@@ -70,5 +70,11 @@
 	],
 	"filament_retraction_length": [
 		"0.8"
+	],
+	"filament_retraction_speed": [
+		"20"
+	],
+	"filament_deretraction_speed": [
+		"20"
 	]
 }

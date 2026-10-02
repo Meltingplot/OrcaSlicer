@@ -52,5 +52,11 @@
 	],
 	"filament_diameter": [
 		"2.85"
+	],
+	"filament_retraction_speed": [
+		"35"
+	],
+	"filament_deretraction_speed": [
+		"35"
 	]
 }
