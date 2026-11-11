@@ -2,11 +2,17 @@
 #define slic3r_MixedFilamentDialog_hpp_
 
 #include <array>
+#include <cstddef>
 #include <string>
 #include <utility>
 #include <vector>
 #include <wx/bitmap.h>
+#include <wx/gdicmn.h>
+#include <wx/event.h>
+#include <wx/colour.h>
 #include <wx/panel.h>
+#include <wx/sizer.h>
+#include <wx/string.h>
 #include <wx/tglbtn.h>
 #include <wx/stattext.h>
 
@@ -95,6 +101,8 @@ private:
     // Picks dialog (width, height) based on current state so the gradient curve
     // editor and the recommendation list stay visible at the same time.
     wxSize compute_dialog_size() const;
+    // Resizes the dialog to compute_dialog_size() around its centre, clamped to its display.
+    void resize_keeping_centre();
     void rebuild_all_combos();
     void rebuild_recommendation_items();
     void refresh_curve_editor_colors();
